@@ -50,6 +50,7 @@ public class SortingStepDefinition {
 	@Then("will display list product in home page will sorting based on price low to high")
 	public void will_display_list_product_in_home_page_will_sorting_based_on_price_low_to_high() {
 		Assert.assertEquals("$7.99",driver.findElement(By.xpath("//div[@class='inventory_list']//div[1]//div[2]//div[2]//div[1]")).getText());
+		System.out.println("Scenario : choose price (low to high)");
 		System.out.println("If Success Sorting Price Low to High, You Can See Firt Product Will See Price " + driver.findElement(By.xpath("//div[@class='inventory_list']//div[1]//div[2]//div[2]//div[1]")).getText());
 		driver.quit();
 	}

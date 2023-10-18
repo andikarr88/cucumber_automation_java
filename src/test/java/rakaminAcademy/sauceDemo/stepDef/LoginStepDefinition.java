@@ -46,6 +46,7 @@ public class LoginStepDefinition {
 	@Then("home page should be displayed")
 	public void home_page_should_be_displayed() {
 		Assert.assertEquals("Products",driver.findElement(By.className("title")).getText());
+		System.out.println("Scenario : Login as valid username");
 		System.out.println("If Success Login, You Can See Title Name " + driver.findElement(By.className("title")).getText());
 		driver.quit();
 	}

@@ -44,6 +44,7 @@ public class LoginFailedStepDefinition {
 	@Then("home page should not be displayed")
 	public void home_page_should_not_be_displayed() {
 		Assert.assertEquals("Epic sadface: Username and password do not match any user in this service",driver.findElement(By.xpath("//h3[contains(text(),'Epic sadface: Username and password do not match a')]")).getText());
+		System.out.println("Scenario : Login as invalid username");
 		System.out.println("If Failed Login, You Can See Error " + driver.findElement(By.xpath("//h3[contains(text(),'Epic sadface: Username and password do not match a')]")).getText());
 		driver.quit();
 	}

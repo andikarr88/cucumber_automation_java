@@ -50,6 +50,7 @@ public class AddToCartStepDefinition {
 	@Then("in cart page, will show product user which choose")
 	public void in_cart_page_will_show_product_user_which_choose() {
 		Assert.assertEquals("Sauce Labs Backpack",driver.findElement(By.xpath("//div[@class='inventory_item_name']")).getText());
+		System.out.println("Scenario : Adding product to cart");
 		System.out.println("If Success Add Product to Cart, You Can See Title Product Name " + driver.findElement(By.xpath("//div[@class='inventory_item_name']")).getText() + "  in Cart Page");
 		driver.quit();
 	}
