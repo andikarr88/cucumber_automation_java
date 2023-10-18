@@ -44,7 +44,7 @@ public class ProductDetailStepDefinition {
 	public void show_to_page_product_detail_which_user_choosen()  {
 		Assert.assertEquals("Sauce Labs Backpack",driver.findElement(By.xpath("//div[@class='inventory_details_name large_size']")).getText());
 		System.out.println("Scenario : Show Product Detail");
-		System.out.println("If Success Choose Product Detail, You Can See Title Product Name " + driver.findElement(By.xpath("//div[@class='inventory_details_name large_size']")).getText());
+		System.out.println("If Success Choose Product Detail " + driver.findElement(By.xpath("//div[@class='inventory_details_name large_size']")).getText() + ", You Can See Title Product Name " + driver.findElement(By.xpath("//div[@class='inventory_details_name large_size']")).getText() + " in Product Detail Page");
 		driver.quit();
 	}
 }
