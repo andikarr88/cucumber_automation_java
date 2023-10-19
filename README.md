@@ -12,8 +12,7 @@ Scenario yang di gunakan
 
 dalam automation ini untuk memastikan script automation di setiap scenario Passed, ditambahkan assertion berikut contoh hasil assertionnya
 
-![image](https://github.com/andikarr88/cucumber_automation_java/assets/59597575/0cd3e207-7471-40ef-9222-f6f04f9b025a)
-
+![image](https://github.com/andikarr88/cucumber_automation_java/assets/59597575/0f6eaac3-cde2-4c96-b7c5-bd378345f396)
 
 dan berikut hasil respot berberntuk HTML nya
 
