@@ -32,19 +32,19 @@ public class AddToCartStepDefinition {
 	    driver.findElement(By.id("user-name")).sendKeys("standard_user");
 	    driver.findElement(By.id("password")).sendKeys("secret_sauce");
 	    driver.findElement(By.id("login-button")).click();
-	    Thread.sleep(500);
+	    Thread.sleep(1000);
 	}
 	
 	@When("user click button Add to Cart in first list product")
 	public void user_click_button_add_to_cart_in_first_list_product() throws Exception {
 	    driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).click();
-	    Thread.sleep(500);
+	    Thread.sleep(1000);
 	}
 	
 	@And("user click icon cart")
 	public void user_click_icon_cart() throws InterruptedException {
 		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 	}
 
 	@Then("in cart page, will show product user which choose")
