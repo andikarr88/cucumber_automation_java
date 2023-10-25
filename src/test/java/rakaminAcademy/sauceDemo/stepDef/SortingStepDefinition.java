@@ -32,19 +32,19 @@ public class SortingStepDefinition {
 	    driver.findElement(By.id("user-name")).sendKeys("standard_user");
 	    driver.findElement(By.id("password")).sendKeys("secret_sauce");
 	    driver.findElement(By.id("login-button")).click();
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	}
 	
 	@When("user click Name  \\(A to Z) in top right of page")
 	public void user_click_Name_A_to_Z_in_top_right_of_page() throws Exception{
 		driver.findElement(By.xpath("//select[@class='product_sort_container']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 	}
 	
 	@And("user choose price \\(low to highr)")
 	public void user_choose_price_low_to_highr() throws Exception {
 		driver.findElement(By.xpath("//option[@value='lohi']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 	}
 	
 	@Then("will display list product in home page will sorting based on price low to high")

@@ -31,13 +31,13 @@ public class ProductDetailStepDefinition {
 	    driver.findElement(By.id("user-name")).sendKeys("standard_user");
 	    driver.findElement(By.id("password")).sendKeys("secret_sauce");
 	    driver.findElement(By.id("login-button")).click();
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	}
 
 	@When("user click Name Product in list first product")
 	public void user_click_name_product_in_list_first_product() throws Exception {
 		driver.findElement(By.xpath("//div[normalize-space()='Sauce Labs Backpack']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 	}
 
 	@Then("show to page product detail which user choosen")

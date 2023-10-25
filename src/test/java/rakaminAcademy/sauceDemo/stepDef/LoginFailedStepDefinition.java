@@ -32,14 +32,14 @@ public class LoginFailedStepDefinition {
 	@When("user input invalid username and password")
 	public void user_input_valid_username() throws Exception {
 	    driver.findElement(By.id("user-name")).sendKeys("standard_user1");
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	    driver.findElement(By.id("password")).sendKeys("secret_sauce");
-	    Thread.sleep(1000);
+	    Thread.sleep(5000);
 	}
 	@And("click button Login")
 	public void user_click_button_login() throws Exception {
 		driver.findElement(By.id("login-button")).click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 	}
 	@Then("home page should not be displayed")
 	public void home_page_should_not_be_displayed() {
